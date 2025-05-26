@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biodata Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+    input {
+      padding: 5px;
+      width: 200px;
+    }
+    #pic {
+      width: 150px;
+      height: 150px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+<h1><span></span></h1>
+  <h2>Biodata Form</h2>
+
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter name">
+  </div>
+
+  <div class="form-group">
+    <label for="address">Address:</label>
+    <input type="text" id="address" placeholder="Enter address">
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age:</label>
+    <input type="text" id="age" placeholder="Enter age">
+  </div>
+
+  <div class="form-group">
+    <label for="dob">DOB:</label>
+    <input type="date" id="dob">
+  </div>
+
+  <div class="form-group">
+    <label for="state">State:</label>
+    <input type="text" id="state" placeholder="Enter state">
+  </div>
+
+ <div class="form-group">
+    <label for="city">City:</label>
+    <input type="text" id="city" placeholder="Enter city">
+  </div>
+
+   <div class="form-group">
+    <label for="pincode">Pincode:</label>
+    <input type="text" id="pincode" placeholder="Enter pincode">
+  </div>
+  
+  <button id="fillDataBtn">Fill Data</button>
+
+ <img id="pic" src="pic.jpeg" alt="">
+
+  <script>
+    // JavaScript to handle form filling and image change
+    document.getElementById('fillDataBtn').addEventListener('click', function() {
+      document.getElementById('name').value = 'meet patel';
+      document.getElementById('address').value = ' jesangpura';
+      document.getElementById('age').value = '17';
+      document.getElementById('dob').value = '19-07-2007';
+      document.getElementById('state').value = 'Gujarat';
+      document.getElementById('city').value = 'vadodara';
+      document.getElementById('pincode').value = '390019';
+      document.getElementById('pic').src="mit.webp";
+      document.getElementById('pic').style.borderRadius="50%";
+    });
+  </script>
+</body>
+</html>

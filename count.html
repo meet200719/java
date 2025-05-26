@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <p id="textPara">This is a paragraph.</p>
+<button onclick="enlargeText()">Enlarge Text</button>
+
+   <h1>Counter:</h1><span id="counter">0</span>
+<button onclick="incrementCounter()">Increase</button>
+</body>
+<div id="hoverBox" style="width:100px; height:100px; background:gray;"></div>
+<script>
+    function changeText() {
+  document.getElementById("myPara").textContent = "Text has been changed!";
+}
+let count = 0;
+
+function incrementCounter() {
+  count++;
+  document.getElementById("counter").textContent = count;
+}
+const box = document.getElementById("hoverBox");
+
+box.addEventListener("mouseover", function() {
+  box.style.backgroundColor = "blue";
+});
+
+box.addEventListener("mouseout", function() {
+  box.style.backgroundColor = "gray";
+});
+
+function enlargeText() {
+  document.getElementById("textPara").style.fontSize = "24px";
+}
+
+</script>
+</html>
